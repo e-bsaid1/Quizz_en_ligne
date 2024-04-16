@@ -1,0 +1,50 @@
+body {
+    /* Fond dégradé du haut vers le bas avec la couleur blanche qui occupe 20% de la fenêtre*/
+    background: linear-gradient(180deg,white, #e6c973 80%);
+    /*Fond dégradé appliqué sur toute la fenêtre*/
+    background-attachment: fixed;
+}
+
+.image-questionnaire {
+    height: 200px;
+    width: 250px;
+    /*Permet de modifier les dimensions de la galerie d'image selon les valeurs mentionnés plus haut*/
+    object-fit: fill;
+    position: relative;
+    left: 530px;
+}
+
+section {
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: #443131;
+}
+
+button {
+
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input {
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Affichage des réponses bonnes ou mauvaises après validation du formulaire*/
+.reponse_bonne {
+    accent-color: green;
+  }
+
+.reponse_mauvaise {
+    accent-color: red;
+}
+
+.disabled {
+  background: #ccc;
+}

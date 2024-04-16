@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>L'avènement des démocraties libérales</title>
+        <link href = "css/questionnaire_styles.css" rel = "stylesheet">  
+        <!-- Inclusion de la famille de police Manrope Montserrat dans la page HTML  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <script src="js/questionnaire_style.js" async></script>
+    </head>
+    <body>
+        <header>
+            <img class = "image-questionnaire" src = "images/e43c056d623806ea064b1cc23ad344e6d1a8e13e.jpeg">
+        </header>
+        <section>
+            <form method = "get" action = "" id = "QuizFormulaire">
+                <fieldset>
+                    <legend><h1>L'avènement des démocraties libérales</h1></legend>
+                    
+                    <h2>1 - Les démocraties libérales ont promu : (/3)</h2>
+                    <input type = "checkbox" name = "promotions_démocratie" value = "liberalisme_economique" id = "liberalisme_economique" class = "right_answer">
+                    <label for = "liberalisme_economique">le libéralisme économique</label><br>
+                    <input type = "checkbox" name = "promotions_démocratie" value = "liberalisme_industriel" id = "liberalisme_industriel" class = "right_answer">
+                    <label for = "liberalisme_industriel">le libéralisme intellectuel</label><br>
+                    <input type = "checkbox" name = "promotions_démocratie" value = "democratie" id = "democratie" class = "right_answer">
+                    <label for = "democratie">la démocratie</label><br>
+                    <input type = "checkbox" name = "promotions_démocratie" value = "liberalisme_intellectuel" id = "liberalisme_intellectuel" class = "false_answer">
+                    <label for = "liberalisme_intellectuel">le libéralisme intellectuel</label><br>
+
+                    <h2>2 - Le pluralisme critique c'est la thèse que : (/1) </h2>
+                    <input type = "radio" name = "pluralisme_critique" value = "tolerence" id = "tolerence" class = "false_answer">
+                    <label for = "tolerence">interdire le pluralisme produit plus de mal que de bien</label><br>
+                    <input type = "radio" name = "pluralisme_critique" value = "plu_critique" id = "plu_critique" class = "right_answer">
+                    <label for = "plu_critique">le pluralisme produit par lui-même toujours un bien</label><br>
+                    
+                    <h2>3 - L'intervention de l'Etat à soutenir une version de la Vérité : (/1) </h2>
+                    <input type = "radio" name = "interventionisme_etatique" value = "maximum" id = "maximum" class = "false_answer">
+                    <label for = "maximum">bloque le processus de progrès de connaissance</label><br>
+                    <input type = "radio" name = "interventionisme_etatique" value = "minimum" id = "minimum" class = "right_answer">
+                    <label for = "minimum">facilite le processus de progrès de connaissances</label><br>
+
+                    <h2>4 - Pour qu'une société civile soit libérale, elle doit : (/1) </h2> 
+                    <input type = "radio" name = "societe_liberale" value = "dependance_etat" id = "dependance_etat" class = "false_answer">
+                    <label for = "dependance_etat">indissolublement être liée à l'Etat</label><br>
+                    <input type = "radio" name = "societe_liberale" value = "societes_privees" id = "societes_privees" class = "false_answer">
+                    <label for = "societes_privees">avoir des entreprises dépendantes économiquement liées à l'Etat</label><br>
+                    <input type = "radio" name = "societe_liberale" value = "independance_etat" id = "independance_etat" class = "right_answer">
+                    <label for = "independance_etat">avoir des entreprises indépendantes économiquement de l'Etat</label><br>
+
+                    <h2>5 - D'après Thomas d'Aquin, les prix du marché sont : (/1)</h2>
+                    <input type = "radio" name = "statut_prix" value = "fixe" id = "fixe" class = "false_answer">
+                    <label for = "fixe">fixes, basés sur des critères dépendants du commerçant</label><br>
+                    <input type = "radio" name = "statut_prix" value = "variable" id = "variable" class = "right_answer">
+                    <label for = "variable">variables en fonction de l'offre et de la demande</label><br>
+
+                    <h2>6 - L'économie serait donc auto-régulatrice : (/1)</h2>
+                    <input type = "radio" name = "auto-regulation" value = "oui" id = "oui" class = "right_answer">
+                    <label for = "oui">Oui</label><br>
+                    <input type = "radio" name = "auto-regulation" value = "non" id = "non" class = "false_answer">
+                    <label for = "non">Non</label><br>
+                </fieldset>
+            </form> 
+        </section>
+
+        <button type="button" onclick="score_check_form(); this.disabled=true; this.value='Sending...'" >Vérifier les réponses</button>
+        <p id="resultat">Score :<span id="compteur">0</span>/8</p>
+
+        <a href = "bilan.html">
+            <input type = "submit" value = "Fin">
+        </a>
+    </body>
+</html>

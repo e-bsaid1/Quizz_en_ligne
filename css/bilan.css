@@ -1,0 +1,72 @@
+p {
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: #443131;
+    font-size: 25px;
+    font-weight: 600px;
+}
+
+.galerie-accueil {
+    /*Aligne les images horziontalement avec des espaces entre les images*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.image-accueil {
+    height: 200px;
+    width: 250px;
+    /*Permet de modifier les dimensions de la galerie d'image selon les valeurs mentionnés plus haut*/
+    object-fit: fill;
+    /*Créer un reflet de l'image en dessous*/
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+
+body {
+    /* Fond dégradé du haut vers le bas avec la couleur blanche qui occupe 20% de la fenêtre*/
+    background: linear-gradient(180deg,white, #e6c973 80%);
+    /*Fond dégradé appliqué sur toute la fenêtre*/
+    background-attachment: fixed;
+}
+
+
+p {
+    /*Centralisation du message de remerciement*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*Permet de centraliser l'élément indépendemment de sa taille*/
+    transform: translate(-50%, -50%);
+}
+
+form {
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    position: relative;
+    top: 60px;
+    right: 185px;
+    transform: translate(-50%, -50%);
+}
+
+textarea {
+    width: 500px;
+    height: 100px;
+    position: relative;
+    left: 60px;
+    top: 10px;
+    border-radius: 1%;
+}
+
+label {
+    position: relative;
+    left: 175px;
+}

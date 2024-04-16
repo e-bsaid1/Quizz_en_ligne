@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Le miracle grec</title>
+        <!-- Inclusion du css dans le fichier html-->
+        <link href = "css/questionnaire_styles.css" rel = "stylesheet">  
+        <!-- Inclusion de la famille de police Manrope Montserrat dans la page HTML  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <script src="js/questionnaire_style.js"></script>
+    </head>
+    <body>
+        <!-- En-tête-->
+        <header>
+            <img class = "image-questionnaire" src = "images/619px-_The_School_of_Athens__by_Raffaello_Sanzio_da_Urbino.jpg">
+        </header>
+        <!-- Questionnaire -->
+        <section class = "grec-questionnaire" id = "QuizFormulaire">
+            <form method = "get" action = "">
+                <fieldset>
+                    <legend><h1>L'invention de la Cité grecque</h1></legend>
+                        <p>
+                            <h2>1 - Les monarchies mycéniennes ont été détruites : (/1)</h2>
+                            <input type = "radio" name = "date" value = "1600 " id = "1600" class = "false_answer">
+                            <label for = "1600">1600 avant J-C</label> <br>
+                            <input type = "radio" name = "date" value = "2000 " id = "2000" class = "false_answer">
+                            <label for = "1600">2000 avant J-C</label> <br>
+                            <input type = "radio" name = "date" value = "1500 " id = "1500" class = "false_answer">
+                            <label for = "1500">1500 avant J-C</label> <br>
+                            <input type = "radio" name = "date" value = "1200 " id = "1200" class = "right_answer">
+                            <label for = "1200">1200 avant J-C</label> <br>
+
+                            <h2>2 - Après la destruction, les fonctions royales sont exercées par : (/1)</h2>
+                            <input type = "radio" name = "direction" value = "peuple" id = "peuple" class = "false_answer">
+                            <label for = "peuple">le peuple</label> <br>
+                            <input type = "radio" name = "direction" value = "magistrats" id = "magistrats" class = "right_answer">
+                            <label for = "magistrats">des magistrats</label> <br>
+                            <input type = "radio" name = "direction" value = "grandes_familles" id = "grandes_familles" class = "false_answer">
+                            <label for = "grandes_familles">des grandes familles</label> <br>
+
+                            <h2>3 - Le pouvoir ainsi divisé est exercé... : (/1)</h2>
+                            <input type = "radio" name = "transparence" value = "non" id = "non" class = "false_answer">
+                            <label for = "non">dans le secret</label> <br>
+                            <input type = "radio" name = "transparence" value = "oui" id = "oui" class = "right_answer">
+                            <label for = "oui">publiquement</label> <br>
+
+                            <h2>4 - Les décisions sont prises lors d'assemblées selon : (/2)</h2>
+                            <input type = "checkbox" name = "débat" value = "statut" id = "statut" class = "false_answer">
+                            <label for = "statut">le statut des intervenants</label> <br>
+                            <input type = "checkbox" name = "débat" value = "forme_discours" id = "forme_discours" class = "right_answer">
+                            <label for = "forme_discours">la forme des discours des intervenants</label> <br>
+                            <input type = "checkbox" name = "débat" value = "raison" id = "raison" class = "right_answer">
+                            <label for = "raison">la pensée rationnelle des intervenants</label> <br>
+
+                            <h2>5 - En société, les citoyens grecs sont : (/1)</h2>
+                            <input type = "radio" name = "statut_citoyens" value = "indispensables" id = "indispensables" class = "false_answer">
+                            <label for = "indispensables">indispensables</label> </br>
+                            <input type = "radio" name = "statut_citoyens" value = "interchangeables" id = "interchangeables" class = "right_answer">
+                            <label for = "indispensables">interchangeables</label> </br>
+                            
+                            <h2>6 - Avec le développement de la cité grecque, la religion devient : (/1)</h2>
+                            <input type = "radio" name = "religion" value = "horizontale" id = "horizontale" class = "false_answer">
+                            <label for = "horizontale">horizontale (soude le groupe, fonde l'ordre sociale) </label> </br>
+                            <input type = "radio" name = "religion" value = "verticale" id = "verticale" class = "right_answer">
+                            <label for = "verticale">verticale (relation d'homme à Dieu)</label> </br> 
+
+                            <h2>7 - En Grèce émerge l'idée que : (/1)</h2>
+                            <input type = "radio" name = "ordre_social" value = "changeable" id = "changeable" class = "right_answer">
+                            <label for = "inchangeable">l’ordre social peut être soumis à la critique et au changement (nomos)</label> </br>
+                            <input type = "radio" name = "ordre_social" value = "inchangeable" id = "inchangeable" class = "false_answer">
+                            <label for = "changeable">l’ordre social est intangible, inchangeable (physis)</label> </br> 
+
+                            <h2>8- Quel était la différence entre les sciences grecques et les sciences des civilisations antérieures ? (/3) </h2>
+                            <input type = "checkbox" name = "sciences" value = "isolement_croyances_mythiques" id = "isolement_croyances_mythiques" class = "false_answer">
+                            <label for = "isolement_croyances_mythiques">Les Grecs étaient unanimes sur les croyances mythiques </label> <br>
+                            <input type = "checkbox" name = "sciences" value = "theories" id = "theories" class = "right_answer">
+                            <label for = "theories">Les sciences grecques prenaient la forme de théories</label> <br>
+                            <input type = "checkbox" name = "sciences" value = "developpement_cites" id = "developpement_cites" class = "right_answer">
+                            <label for = "developpement_cites">Le développement des cités grecs est lié au développement des sciences</label> <br>
+                            <input type = "checkbox" name = "sciences" value = "esprit_scientifique_et_voie_objets" id = "esprit_scientifique_et_voie_objets" class = "right_answer">
+                            <label for = "esprit_scientifique_et_voie_objets">Les sciences grecques prenaient la forme de théories</label> <br>
+                        </p>
+                </fieldset>
+            </form>
+        </section>
+        
+        <button type="button" onclick="score_check_form(); this.disabled=true; this.value='Sending...'" >Vérifier les réponses</button>
+        
+        <p id="resultat">Score : <span id="compteur">0</span>/11</p>
+
+        <a href = "rome.html">
+            <input type = "submit" value = "Suivant">
+        </a>
+    </body>
+</html>
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>L'éthique et l'eschatologie bibliques</title>
+        <link href = "css/questionnaire_styles.css" rel = "stylesheet">  
+        <!-- Inclusion de la famille de police Manrope Montserrat dans la page HTML  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <script src="js/questionnaire_style.js" async></script>
+    </head>
+    <body>
+        <header>
+            <img class = "image-questionnaire" src = "images/Moïse-recevant-les-tables-de-la-Loi-1659-par-Rembrandt-(1606-1669).jpg">
+        </header>
+        <section>
+            <form method = "get" action = "" id = "QuizFormulaire">
+                <fieldset>
+                    <legend><h1>L'éthique et l'eschatologie bibliques</h1></legend>
+                    
+                    <h2>1 - Avec la morale biblique nait une justice nouvelle :</h2>
+                    <input type = "radio" name = "justice" value = "isedaqa" id = "isedaqa" class = "right_answer">
+                    <label for = "isedaqa">l'isedaqa (compassion pour les pauvres + changement de l'ordre social)</label> <br>
+                    <input type = "radio" name = "justice" value = "mishpat" id = "mishpat" class = "false_answer">
+                    <label for = "mishpat">la mishpat ("rentre à chacun le sien")</label> <br>
+
+                    <h2>2 - La miséricorde exige :</h2>
+                    <input type = "radio" name = "misericorde" value = "dons_spirituels_infinis" id = "dons_spirituels_infinis" class = "right_answer">
+                    <label for = "dons_spirituels_infinis">des dons terrestres infinis en échange de dons spirituels finis</label> <br>
+                    <input type = "radio" name = "dons_terrestres_infinis" value = "dons_terrestres_infinis" id = "dons_terrestres_infinis" class = "false_answer">
+                    <label for = "mishpat">des dons spiritiels infinis en échange de dons terrestres finis</label> <br>
+
+                    <h2>3 - La justice biblique est :</h2>
+                    <input type = "radio" name = "modalite_justice" value = "demesure_illimite" id = "demesure_illimite" class = "right_answer">
+                    <label for = "demesure_illimite">démesurée et illimitée</label> <br>
+                    <input type = "radio" name = "modalite_justice" value = "mesure_limite" id = "mesure_limite" class = "false_answer">
+                    <label for = "mesure_limite">mesurée et limitée </label> <br>
+
+                    <h2>4 - Le temps dans la Bible est :</h2>
+                    <input type = "radio" name = "tps" value = "cyclique" id = "cyclique" class = "false_answer">
+                    <label for = "cyclique">cyclique</label> <br>
+                    <input type = "radio" name = "tps" value = "linéaire" id = "linéaire" class = "right_answer">
+                    <label for = "linéaire">linéaire </label> <br>
+
+                    <h2>5 -La figure du Messie :</h2>
+                    <input type = "radio" name = "Messie" value = "ignorer_pouvoir_temporel" id = "ignorer_pouvoir_temporel" class = "right_answer">
+                    <label for = "ignorer_pouvoir_temporel">pousse à une défiance du pouvoir temporel</label> <br>
+                    <input type = "radio" name = "Messie" value = "liaison_pouvoir_temporel" id = "liaison_pouvoir_temporel" class = "false_answer">
+                    <label for = "liaison_pouvoir_temporel">se lier au pouvoir temporel</label> <br>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <button type="button" onclick="score_check_form(); this.disabled=true; this.value='Sending...'" >Vérifier les réponses</button>
+        <p id="resultat">Score : <span id="compteur">0</span>/5</p>
+
+        <a href = "revolution_papale.html">
+            <input type = "submit" value = "Suivant">
+        </a>
+        
+    </body>
+
+
+</html>

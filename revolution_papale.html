@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset= "utf-8">
+        <title>La révolution papale</title>
+        <link href = "css/questionnaire_styles.css" rel = "stylesheet">  
+        <!-- Inclusion de la famille de police Manrope Montserrat dans la page HTML  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <script src="js/questionnaire_style.js" async></script>
+    </head>
+    <body>
+        <header><img class = "image-questionnaire" src = "images/gregoire-VII.jpg"></header>
+        <section>
+            <form method = "get" action = "" id = "QuizFormulaire">
+                <fieldset>
+                    <legend><h1>La réforme grégorienne</h1></legend>
+                    
+                    <h2>1 - La réforme papale inaugure en droit :</h2>
+                    <input type = "radio" name = "droit_romain" value = "eloignement" id = "eloignement" class = "false_answer">
+                    <label for = "eloignement"> la prise de distance avec le droit romain</label><br>
+                    <input type = "radio" name = "droit_romain" value = "rapprochement" id = "rapprochement" class = "right_answer">
+                    <label for = "rapprochement">l'étude du droit romain et l'harmonisation avec l'éthique biblique</label><br>
+                    
+                    <h2>2 - Elle eut lieu au :</h2>
+                    <input type = "radio" name = "date_reforme" value = "Xe_siecle" id = "Xe_siecle" class = "false_answer">
+                    <label for = "Xe_siecle">Xe siècle</label><br>
+                    <input type = "radio" name = "date_reforme" value = "XIe_siecle" id = "XIe_siecle" class = "right_answer">
+                    <label for = "XIe_siecle">XIe siècle</label><br>
+                    <input type = "radio" name = "date_reforme" value = "XIIe_siecle" id = "XIIe_siecle" class = "false_answer">
+                    <label for = "XIIe_siecle">XIIe siècle</label><br>
+                    <input type = "radio" name = "date_reforme" value = "XIIIe_siecle" id = "XIIIe_siecle" class = "false_answer">
+                    <label for = "XIIIe_siecle">XIIIe siècle</label><br>
+
+                    <h2>3 - En effectuant cette réforme, le pape Grégoire VII avait des prétentions à avoir les pleins pouvoirs :</h2>
+                    <input type = "radio" name = "domaine_plein_pouvoir" value = "regulier" id = "regulier" class = "right_answer">
+                    <label for = "regulier">uniquement sur l'Eglise</label><br>
+                    <input type = "radio" name = "domaine_plein_pouvoir" value = "regulier_et_seculier" id = "regulier_et_seculier" class = "false_answer">
+                    <label for = "regulier_et_seculier">sur l'Eglise et les royaumes séculiers</label><br>
+
+                    <h2>4 - Ainsi, les prélats étaient nommés :</h2>
+                    <input type = "radio" name = "nomination_clercs" value = "pouvoir_ecclesiastique" id = "pouvoir_ecclesiastique" class = "right_answer">
+                    <label for = "pouvoir_ecclesiastique">par l'Eglise</label><br>
+                    <input type = "radio" name = "nomation_clercs" value = "pouvoirs_ecclesiastiques_et_seculiers" id ="pouvoirs_ecclesiastiques_et_seculiers" class = "false_answer">
+                    <label for = "pouvoirs_ecclesiastiques_et_seculiers">par l'Eglise et les royaumes séculiers</label><br>
+
+                    <h2>5 - Le célibat des prêtres fut rendu obligatoire à cette période.</h2>
+                    <input type = "radio" name = "celibat_pretres" value = "oui" id = "oui" class = "right_answer">
+                    <label for = "oui">Oui</label><br>
+                    <input type = "radio" name = "celibat_pretres" value = "non" id = "non" class = "false_answer">
+                    <label for = "non">Non</label>
+
+                    <h2>6 - Dans les facultés des Arts, étaient enseignés :</h2>
+
+                    <input type = "checkbox" name = "facultees_matieres" value = "theologie" id = "theologie" class = "right_answer">
+                    <label for = "theologie">théologie</label>
+                    <input type = "checkbox" name = "facultees_matieres" value = "rhetorique" id = "rhetorique" class = "false_answer">
+                    <label for = "rhetorique">rhétorique</label>
+                    <input type = "checkbox" name = "facultees_matieres" value = "arts_plastiques" id = "arts_plastiques" class = "false_answer">
+                    <label for = "arts_plastiques">arts plastiques</label>
+                    <input type = "checkbox" name = "facultees_matieres" value = "droit_romain" id = "droit_romain" class = "right_answer">
+                    <label for = "droit_romain">droit romain</label>
+                    <input type = "checkbox" name = "facultees_matieres" value = "droit_canon" id = "droit_canon" class = "right_answer">
+                    <label for = "droit_canon">droit canon</label>
+                    <input type = "checkbox" name = "facultees_matieres" value = "medecine" id = "medecine" class = "right_answer">
+                    <label for = "medecine">médecine</label>  
+                    
+                    <h2>7 - Le renouveau du droit et de la science est :</h2>
+                    <input type = "radio" name = "decouverte_renaissance" value = "materiel" id = "materiel" class = "false_answer">
+                    <label for = "materiel">matériel (découverte des textes)</label>
+                    <input type = "radio" name = "decouverte_renaissance" value = "intellectuel" id = "intellectuel" class = "right_answer">
+                    <label for = "intellectuel">intellectuel (utilité pratique pour le salut religieux)</label>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <button type="button" onclick="score_check_form(); this.disabled=true; this.value='Sending...'" >Vérifier les réponses</button>
+        <p id="resultat">Score :<span id="compteur">0</span>/10</p>
+
+        <a href = "democratie_liberale.html">
+            <input type = "submit" value = "Suivant">
+        </a>
+    </body>
+</html>
